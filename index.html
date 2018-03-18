@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115575154-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115575154-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <title>YiiNG | Home</title>
+</head>
+<body>
+    <a href="javascript: " id="return-to-top"> <i class="fas fa-angle-double-up"></i></a>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 160) {     
+                $('#return-to-top').fadeIn(200);    
+            } else {
+                $('#return-to-top').fadeOut(200);  
+            }
+        });
+        $('#return-to-top').click(function() {      
+            $('body,html').animate({
+                scrollTop : 0                      
+            }, 750);
+        });        
+    </script>
+
+    <header class="ys-header container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse" >
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ys-header-bg">
+            <video src="img/ys-header-bg.mp4" autoplay="true" loop="true"></video>
+        </div>
+        <div class="ys-header-overlay"></div>
+        <div class="ys-header-content">
+            <span class="ys-intro-typed"></span>
+        </div>
+        <!-- Typed.js script -->
+        <script>
+            var typed = new Typed(".ys-intro-typed", {
+                strings: ["Hi there :D","I'm <em>Ying Shuang</em> <i class='fas fa-heart'/>","Welcome to my site :)"],
+                typeSpeed: 90,
+                startDelay: 100, 
+                loop: true,
+                loopCount: Infinity,
+                contentType: 'html'
+            });   
+        </script>
+        <!-- Nav bar show after scroll -->
+        <script>
+            (function ($) {
+                $(document).ready(function(){
+                    $(".navbar").hide();
+                    $(function () {
+                        $(window).scroll(function () {
+                            if ($(this).scrollTop() > 500) {
+                                $('.navbar').fadeIn();
+                            } else {
+                                $('.navbar').fadeOut();
+                            }
+                        });
+                    });
+                });
+            }(jQuery));      
+        </script>
+    </header>
+
+<section id="about">
+    <div class="ys-about-page my-4">
+        <div class="col-12 text-center py-5">
+            <h2>About Me <img src="img/ys-cute.png" alt=""></h2>
+        </div>
+        <div class="d-flex flex-wrap">
+            <div class="ys-profile-holder col-md-4 col-12 text-center">
+                <img src="img/ys-profile.png" class="img-fluid" alt="my profile">
+            </div>
+            <div class="ys-about-slider col-12 col-md-8 text-center px-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="6000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h2 class="d-block w-100">A little about me</h2>
+                            <p class="=text-center mt-3">My name is Ying Shuang, I'm currently study at UCSI as a Biotechnology student. <img src="img/ys-bio.png" alt=""> Our course mainly focus on develop modern impact on the natural ecosystems. <img src="img/ys-natural.png" alt=""> </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h2 class="d-block w-100">What I Like the Most </h2>
+                            <p class="=text-center mt-3">I'm a foodie. <img src="img/ys-food.png" alt=""> I'm a dessert lover. <img src="img/ys-dessert.png" alt=""> I'm a music lover. <img src="img/ys-music.png" alt="">  </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h2 class="d-block w-100">What I Currently Doing</h2>
+                            <p class="=text-center mt-3">Study, Assignment, Exam <img src="img/ys-exam.png" alt=""></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="w-100 p-5">
+    <div class="col-12 text-center py-3">
+        <h2>More About Myself <img src="img/ys-happy.png" alt=""></h2>
+    </div>
+    <div class="ys-resume-holder d-flex flex-wrap col-12">
+        <div class="ys-resume-language col-12 col-md-4">
+            <h3 class="text-center">Education</h3>
+            <h4 class="text-center"><img src="img/ys-education.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> BSC.(HONS) Biotechnology (2016-present)</p>
+            <p><img src="img/ys-arrow-right.png"> STPM Science Stream CGPA: 3.33 (2014-2015) </p>
+            <p><img src="img/ys-arrow-right.png"> SPM Science Stream 6A4B (2009-2013)</p>
+        </div>
+        <div class="ys-resume-experiences col-12 col-md-4">
+            <h3 class="text-center">Work Experience</h3>
+            <h4 class="text-center"><img src="img/ys-work.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> Customer Care at The Coffee Bean and Tea Leaf (S) Pte Ltd (Nov 2017-Dec 2017) </p>
+            <p><img src="img/ys-arrow-right.png"> Admin & Tutor at Newton Tuition Center (Dec 2015-Aug 2016)</p>
+            <p><img src="img/ys-arrow-right.png"> Secretary Assistant & Accountant at Sen Industries (Dec 2013-Aug 2014) </p>
+            <p><img src="img/ys-arrow-right.png"> Sales Assistant at Purple Star Car Accessories (Dec 2012-Jan 2013)</p>
+        </div>
+        <div class="ys-resume-skills col-12 col-md-4">
+            <h3 class="text-center">Extra-Curricular</h3>
+            <h4 class="text-center"><img src="img/ys-activity.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> Logistics Team member in Chinese Culture Society Dragon Boat Festival in UCSI University (June 2017)</p>
+            <p><img src="img/ys-arrow-right.png"> Publicity Team member in Chinese Culture Society Mooncake Festival in UCSI University (September 2017)</p>
+            <p><img src="img/ys-arrow-right.png"> Distinction level in Malaysian National Chemistry Quiz 2015</p>
+        </div>
+    </div>
+    
+    <div class="ys-resume-holder-list-2 d-flex flex-wrap col-12 mt-md-5 mt-sm-2 ">
+        <div class="ys-resume-language col-12 col-md-4">
+            <h3 class="text-center">Leadership</h3>
+            <h4 class="text-center"><img src="img/ys-leadership.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> Committee member of Chinese Culture Society (CCS)</p>
+            <p><img src="img/ys-arrow-right.png"> Committee member of Student Affair Association (SASSA)</p>
+            <p><img src="img/ys-arrow-right.png"> Executive committee of prefect</p>
+            <p><img src="img/ys-arrow-right.png"> Vice captain of athletic club</p>
+        </div>
+        <div class="ys-resume-experiences col-12 col-md-4">
+            <h3 class="text-center">Language</h3>
+            <h4 class="text-center"><img src="img/ys-languages.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> Proficient in writing and speaking in English, Bahasa Melayu, Mandarin</p>
+        </div>
+        <div class="ys-resume-skills col-12 col-md-4">
+            <h3 class="text-center">Software</h3>
+            <h4 class="text-center"><img src="img/ys-software.png" alt=""></h4>
+            <p><img src="img/ys-arrow-right.png"> Familiar in using Microsoft Word, Excel, Power Point</p>
+        </div>
+    </div> 
+</section>
+
+<section id="contact" class="w-100 p-5">
+    <div class="col-12 text-center py-3">
+        <h2>Follow Me Now <img src="img/ys-follower.png" alt="" class="animated infinite pulse"></h2>
+    </div>
+    <div class="ys-contact-holder d-flex flex-wrap col-12 justify-content-center">
+        <h4 class="w-100 text-center py-2">"For every action, there is an equal and opposite reaction, plus a <em>social media overreaction</em> :P"</h4>
+        <div class="p-3"><a href="https://www.facebook.com/profile.php?id=100001189291580" target="_blank"><img src="img/ys-facebook.png" alt="facebook icon"></a></div>
+        <div class="p-3"><a href="https://www.instagram.com/yiing1213/?hl=en" target="_blank"><img src="img/ys-instagram.png" alt="instagram icon"></a></div>
+    </div>
+    <div class="col-12 text-center my-3 ">2018 &copy; This website is developed by <a href="https://luisyc.com/" target="_blank">luisyc</a></div>
+</section>
+
+    <!-- Scroll Reveal JS -->
+    <script>
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal('.ys-profile-holder',{ duration:2000, origin:'left', opacity:0.5, scale: 0.5});
+    </script>
+
+</body>
+</html>
