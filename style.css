@@ -13,7 +13,10 @@ body {
     height: 100%;
 }
 h1, h2, h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+.ys-about-intro {
+    font-family: 'Satisfy', cursive;
 }
 .ys-header {
     height: 100vh;
@@ -145,8 +148,8 @@ button.navbar-toggler {
 #accordion button {
     text-decoration: none;
     text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4em;
     color: #333;
 }
 #accordion button img {
