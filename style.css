@@ -106,7 +106,7 @@ button.navbar-toggler {
 }
 .ys-about-page {
     position: relative;
-    z-index: -1;
+    z-index: 3;
 }
 #ys-about-img {
     height: 58px;
