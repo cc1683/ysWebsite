@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115575154-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-115575154-2');
@@ -13,42 +14,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|East+Sea+Dokdo" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <title>YiiNG | Home</title>
 </head>
+
 <body>
-    <a href="javascript: " id="return-to-top"> <i class="fas fa-angle-double-up"></i></a>
+    <a href="javascript: " id="return-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
     <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 400) {     
-                $('#return-to-top').fadeIn(200);    
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 400) {
+                $('#return-to-top').fadeIn(200);
             } else {
-                $('#return-to-top').fadeOut(200);  
+                $('#return-to-top').fadeOut(200);
             }
         });
-        $('#return-to-top').click(function() {      
+        $('#return-to-top').click(function () {
             $('body,html').animate({
-                scrollTop : 0                      
+                scrollTop: 0
             }, 750);
         });        
     </script>
 
     <header class="ys-header container">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarNav" class="collapse navbar-collapse" >
+            <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -73,18 +83,18 @@
         <!-- Typed.js script -->
         <script>
             var typed = new Typed(".ys-intro-typed", {
-                strings: ["Hi there :D","I'm <em>Ying Shuang</em> <i class='fas fa-heart'/>","Welcome to my site :)"],
+                strings: ["Hi there!", "I'm <em>Ying Shuang</em> :D", "Welcome to my site :)"],
                 typeSpeed: 90,
-                startDelay: 100, 
+                startDelay: 100,
                 loop: true,
-                loopCount:4,
+                loopCount: 4,
                 contentType: 'html'
             });   
         </script>
         <!-- Nav bar show after scroll -->
         <script>
             (function ($) {
-                $(document).ready(function(){
+                $(document).ready(function () {
                     $(".navbar").hide();
                     $(function () {
                         $(window).scroll(function () {
@@ -100,173 +110,269 @@
         </script>
     </header>
 
-<section id="about">
-    <div class="ys-about-page my-4">
-        <div class="col-12 text-center py-5">
-            <h2 class="ys-sub-intro">About Me <img src="img/ys-cute.png" id="ys-about-img" alt=""></h2>
-        </div>
-        <div class="d-flex flex-wrap">
-            <div class="ys-profile-holder col-md-4 col-12 text-center">
-                <img src="img/ys-profile.png" class="img-fluid" alt="my profile">
+    <section id="about">
+        <div class="ys-about-page my-4">
+            <div class="col-12 text-center py-5">
+                <h2 class="ys-sub-intro">About Me
+                    <img src="img/ys-cute.png" id="ys-about-img" alt="">
+                </h2>
             </div>
-            <div class="ys-about-slider col-12 col-md-8 text-center px-5">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <h2 class="d-block w-100 ys-about-intro">A little about me</h2>
-                            <p class="=text-center mt-3">Hey visitor, my name is Ying Shuang and I'm 21 years old. I'm from Johor, Malaysia but now currently stay at Kuala Lumpur for my degree study. I'm styding at UCSI as a Biotechnology student. <img src="img/ys-bio.png" alt=""></p>
+            <div class="d-flex flex-wrap">
+                <div class="ys-profile-holder col-md-4 col-12 text-center">
+                    <img src="img/ys-profile.png" class="img-fluid" alt="my profile">
+                </div>
+                <div class="ys-about-slider col-12 col-md-8 text-center px-5">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h2 class="d-block w-100 ys-about-intro">A little about me</h2>
+                                <p class="=text-center mt-3">Hey visitor, my name is Ying Shuang and I'm 21 years old. I'm from Johor, Malaysia but now
+                                    currently stay at Kuala Lumpur for my degree study. I'm styding at UCSI as a Biotechnology
+                                    student.
+                                    <img src="img/ys-bio.png" alt="">
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h2 class="d-block w-100 ys-about-intro">What I Like the Most </h2>
+                                <p class="=text-center mt-3">I'm a foodie. I'm a dessert lover. I'm a music lover. Blue is my favor color. Are you the
+                                    same?
+                                    <a href="https://www.quora.com/Why-do-many-people-like-the-color-blue" target="_blank">Here</a> is the reason why do many people like the blue color. Feels free to check it
+                                    out.
+                                    <img src="img/ys-food.png" alt="">
+                                    <img src="img/ys-dessert.png" alt="">
+                                    <img src="img/ys-music.png" alt="">
+                                    <img src="img/ys-checked.png" alt="">
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h2 class="d-block w-100 ys-about-intro">What I Currently Doing</h2>
+                                <p class="=text-center mt-3">My degree major in Biotechnology and our course mainly focus on develop modern impact on
+                                    the natural ecosystems. My final exam is around the corner, so Hmmm... study, revision,
+                                    assignment, exam. It's never ending story.
+                                    <img src="img/ys-natural.png" alt="">
+                                    <img src="img/ys-exam.png" alt="">
+                                </p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <h2 class="d-block w-100 ys-about-intro">What I Like the Most </h2>
-                            <p class="=text-center mt-3">I'm a foodie. I'm a dessert lover. I'm a music lover. Blue is my favor color. Are you the same? <a href="https://www.quora.com/Why-do-many-people-like-the-color-blue" target="_blank">Here</a> is the reason why do many people like the blue color. Feels free to check it out. <img src="img/ys-food.png" alt=""> <img src="img/ys-dessert.png" alt=""> <img src="img/ys-music.png" alt=""> <img src="img/ys-checked.png" alt=""></p>
-                        </div>
-                        <div class="carousel-item">
-                            <h2 class="d-block w-100 ys-about-intro">What I Currently Doing</h2>
-                            <p class="=text-center mt-3">My degree major in Biotechnology and our course mainly focus on develop modern impact on the natural ecosystems. My final exam is around the corner, so Hmmm... study, revision, assignment, exam. It's never ending story. <img src="img/ys-natural.png" alt=""> <img src="img/ys-exam.png" alt=""></p>
-                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(".carousel").swipe({
+                        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                            if (direction == 'left') $(this).carousel('next');
+                            if (direction == 'right') $(this).carousel('prev');
+
+                        },
+                        allowPageScroll: "vertical"
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="w-100 p-5">
+        <div class="col-12 text-center py-3">
+            <h2 class="ys-sub-intro">More About Myself
+                <img src="img/ys-happy.png" alt="" id="ys-resume-img">
+            </h2>
+        </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="ys-education">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#ys-education-control" aria-expanded="true" aria-controls="ys-education-control">
+                            Education
+                            <img src="img/ys-education.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-education-control" class="collapse show" aria-labelledby="ys-education" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>BSC.(HONS) Biotechnology
+                                <em>
+                                    <small>(2016-present)</small>
+                                </em>
+                            </li>
+                            <li>STPM Science Stream CGPA: 3.33
+                                <em>(
+                                    <small>2014-2015)</small>
+                                </em>
+                            </li>
+                            <li>SPM Science Stream 6A4B
+                                <em>
+                                    <small>(2009-2013)</small>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="ys-experiences">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-experiences-control" aria-expanded="false"
+                            aria-controls="ys-experiences-control">
+                            Work Experiences
+                            <img src="img/ys-work.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-experiences-control" class="collapse" aria-labelledby="ys-experiences" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Customer Care at The Coffee Bean and Tea Leaf (S) Pte Ltd
+                                <em>
+                                    <small>(Nov 2017-Dec 2017)</small>
+                                </em>
+                            </li>
+                            <li>Admin &amp; Tutor at Newton Tuition Center
+                                <em>
+                                    <small>(Dec 2015-Aug 2016)</small>
+                                </em>
+                            </li>
+                            <li>Secretary Assistant &amp; Accountant at Sen Industries
+                                <em>
+                                    <small>(Dec 2013-Aug 2014)</small>
+                                </em>
+                            </li>
+                            <li>Sales Assistant at Purple Star Car Accessories
+                                <em>
+                                    <small>(Dec 2012-Jan 2013)</small>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="ys-curricular">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-curricular-control" aria-expanded="false"
+                            aria-controls="ys-curricular-control">
+                            Extra-Curricular
+                            <img src="img/ys-activity.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-curricular-control" class="collapse" aria-labelledby="ys-curricular" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Logistics Team member in Chinese Culture Society Dragon Boat Festival in UCSI University
+                                <em>
+                                    <small>(June 2017)</small>
+                                </em>
+                            </li>
+                            <li>Publicity Team member in Chinese Culture Society Mooncake Festival in UCSI University
+                                <em>
+                                    <small>(September 2017)</small>
+                                </em>
+                            </li>
+                            <li>Distinction level in Malaysian National Chemistry Quiz
+                                <em>
+                                    <small>(2015)</small>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="ys-leadership">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-leadership-control" aria-expanded="false"
+                            aria-controls="ys-leadership-control">
+                            Leadership
+                            <img src="img/ys-leadership.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-leadership-control" class="collapse" aria-labelledby="ys-leadership" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Committee member of Chinese Culture Society (CCS)</li>
+                            <li>Committee member of Student Affair Association (SASSA)</li>
+                            <li>Executive committee of prefect</li>
+                            <li>Vice captain of athletic club</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="ys-language">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-language-control" aria-expanded="false" aria-controls="ys-language-control">
+                            Language
+                            <img src="img/ys-languages.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-language-control" class="collapse" aria-labelledby="ys-language" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Proficient in writing and speaking in English, Bahasa Melayu, Mandarin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="ys-software">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-software-control" aria-expanded="false" aria-controls="ys-software-control">
+                            Software
+                            <img src="img/ys-software.png" alt="">
+                        </button>
+                    </h5>
+                </div>
+                <div id="ys-software-control" class="collapse" aria-labelledby="ys-software" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Familiar in using Microsoft Word, Excel, Power Point</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="resume" class="w-100 p-5">
-    <div class="col-12 text-center py-3">
-        <h2 class="ys-sub-intro">More About Myself <img src="img/ys-happy.png" alt="" id="ys-resume-img"></h2>
-    </div>
-    <div id="accordion">
-        <div class="card">
-            <div class="card-header" id="ys-education">
-                <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#ys-education-control" aria-expanded="true" aria-controls="ys-education-control">
-                        Education <img src="img/ys-education.png" alt="">
-                    </button>
-                </h5>
+    <section id="contact" class="w-100 p-5">
+        <div class="col-12 text-center py-3">
+            <h2 class="ys-sub-intro">Follow Me Now
+                <img src="img/ys-follower.png" alt="" class="animated infinite pulse">
+            </h2>
+        </div>
+        <div class="ys-contact-holder d-flex flex-wrap col-12 justify-content-center">
+            <h4 class="w-100 text-center py-2">"For every action, there is an equal and opposite reaction, plus a
+                <em>social media overreaction</em> :P"</h4>
+            <div class="p-3">
+                <a href="https://www.facebook.com/profile.php?id=100001189291580" target="_blank">
+                    <img src="img/ys-facebook.png" alt="facebook icon">
+                </a>
             </div>
-            <div id="ys-education-control" class="collapse show" aria-labelledby="ys-education" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>BSC.(HONS) Biotechnology <em><small>(2016-present)</small></em></li>
-                        <li>STPM Science Stream CGPA: 3.33 <em>(<small>2014-2015)</small></em></li>
-                        <li>SPM Science Stream 6A4B <em><small>(2009-2013)</small></em></li>
-                    </ul>
-                </div>
+            <div class="p-3">
+                <a href="https://www.instagram.com/yiing1213/?hl=en" target="_blank">
+                    <img src="img/ys-instagram.png" alt="instagram icon">
+                </a>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header" id="ys-experiences">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-experiences-control" aria-expanded="false" aria-controls="ys-experiences-control">
-                        Work Experiences <img src="img/ys-work.png" alt="">
-                    </button>
-                </h5>
-            </div>
-            <div id="ys-experiences-control" class="collapse" aria-labelledby="ys-experiences" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>Customer Care at The Coffee Bean and Tea Leaf (S) Pte Ltd <em><small>(Nov 2017-Dec 2017)</small></em> </li>
-                        <li>Admin &amp; Tutor at Newton Tuition Center <em><small>(Dec 2015-Aug 2016)</small></em></li>
-                        <li>Secretary Assistant &amp; Accountant at Sen Industries <em><small>(Dec 2013-Aug 2014)</small></em></li>
-                        <li>Sales Assistant at Purple Star Car Accessories <em><small>(Dec 2012-Jan 2013)</small></em></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-12 text-center my-3 ">2018. This website is developed by
+            <a href="https://luisyc.com/" target="_blank">luisyc</a>
         </div>
-        <div class="card">
-            <div class="card-header" id="ys-curricular">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-curricular-control" aria-expanded="false" aria-controls="ys-curricular-control">
-                        Extra-Curricular <img src="img/ys-activity.png" alt="">
-                    </button>
-                </h5>
-            </div>
-            <div id="ys-curricular-control" class="collapse" aria-labelledby="ys-curricular" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>Logistics Team member in Chinese Culture Society Dragon Boat Festival in UCSI University <em><small>(June 2017)</small></em></li>
-                        <li>Publicity Team member in Chinese Culture Society Mooncake Festival in UCSI University <em><small>(September 2017)</small></em></li>
-                        <li>Distinction level in Malaysian National Chemistry Quiz <em><small>(2015)</small></em></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="ys-leadership">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-leadership-control" aria-expanded="false" aria-controls="ys-leadership-control">
-                        Leadership <img src="img/ys-leadership.png" alt="">
-                    </button>
-                </h5>
-            </div>
-            <div id="ys-leadership-control" class="collapse" aria-labelledby="ys-leadership" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>Committee member of Chinese Culture Society (CCS)</li>
-                        <li>Committee member of Student Affair Association (SASSA)</li>
-                        <li>Executive committee of prefect</li>
-                        <li>Vice captain of athletic club</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="ys-language">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-language-control" aria-expanded="false" aria-controls="ys-language-control">
-                        Language <img src="img/ys-languages.png" alt="">
-                    </button>
-                </h5>
-            </div>
-            <div id="ys-language-control" class="collapse" aria-labelledby="ys-language" data-parent="#accordion">
-                <div class="card-body">
-                   <ul>
-                       <li>Proficient in writing and speaking in English, Bahasa Melayu, Mandarin</li>
-                   </ul>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="ys-software">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#ys-software-control" aria-expanded="false" aria-controls="ys-software-control">
-                        Software <img src="img/ys-software.png" alt="">
-                    </button>
-                </h5>
-            </div>
-            <div id="ys-software-control" class="collapse" aria-labelledby="ys-software" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>Familiar in using Microsoft Word, Excel, Power Point</li>
-                    </ul>
-                </div>
-            </div>
-        </div>        
-    </div> 
-</section>
-
-<section id="contact" class="w-100 p-5">
-    <div class="col-12 text-center py-3">
-        <h2 class="ys-sub-intro">Follow Me Now <img src="img/ys-follower.png" alt="" class="animated infinite pulse"></h2>
-    </div>
-    <div class="ys-contact-holder d-flex flex-wrap col-12 justify-content-center">
-        <h4 class="w-100 text-center py-2">"For every action, there is an equal and opposite reaction, plus a <em>social media overreaction</em> :P"</h4>
-        <div class="p-3"><a href="https://www.facebook.com/profile.php?id=100001189291580" target="_blank"><img src="img/ys-facebook.png" alt="facebook icon"></a></div>
-        <div class="p-3"><a href="https://www.instagram.com/yiing1213/?hl=en" target="_blank"><img src="img/ys-instagram.png" alt="instagram icon"></a></div>
-    </div>
-    <div class="col-12 text-center my-3 ">2018. This website is developed by <a href="https://luisyc.com/" target="_blank">luisyc</a></div>
-</section>
+    </section>
 
     <!-- Scroll Reveal JS -->
     <script>
-        window.sr = ScrollReveal({reset: false});
-        sr.reveal('.ys-profile-holder',{ duration:2000, origin:'left', opacity:0.5, scale: 0.5});
+        window.sr = ScrollReveal({ reset: false });
+        sr.reveal('.ys-profile-holder', { duration: 2000, origin: 'left', opacity: 0.5, scale: 0.5 });
     </script>
 
 </body>
+
 </html>
