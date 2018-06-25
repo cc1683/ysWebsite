@@ -12,9 +12,7 @@ body {
   background-color: #fdfeff;
   height: 100%;
 }
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Pacifico", cursive;
 }
 .ys-sub-intro {
@@ -39,7 +37,7 @@ h3 {
   background-image: url("img/ys-header-bg.jpeg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: absolute;
   top: 0;
   left: 0;
@@ -111,6 +109,9 @@ button.navbar-toggler {
 }
 .navbar-nav .active {
   color: #99c6f0;
+}
+a.nav-link {
+  cursor: pointer;
 }
 .ys-about-page {
   position: relative;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115575154-2"></script>
@@ -14,18 +13,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- script cdn -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- stylesheet cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|East+Sea+Dokdo" rel="stylesheet">
@@ -52,7 +54,7 @@
         });        
     </script>
 
-    <header class="ys-header container">
+    <header class="ys-header container" id="home">
         <nav class="navbar navbar-expand-lg fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -61,20 +63,43 @@
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" id="scrollToHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" id="scrollToAbout">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" id="scrollToResume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" id="scrollToContact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <script>
+            $('#scrollToHome').click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#home').offset().top
+                }, 800, 'easeInQuint');
+            });
+            $('#scrollToAbout').click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#about').offset().top
+                }, 1000, 'easeInQuint');
+            });
+            $('#scrollToResume').click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#resume').offset().top
+                }, 1000, 'easeInQuint');
+            });
+            $('#scrollToContact').click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#contact').offset().top
+                }, 1000, 'easeInQuint');
+            });
+        </script>
         <div class="ys-header-bg"></div>
         <div class="ys-header-overlay"></div>
         <div class="ys-header-content">
@@ -374,5 +399,4 @@
     </script>
 
 </body>
-
 </html>
